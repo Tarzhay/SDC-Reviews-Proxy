@@ -41,20 +41,21 @@
 */
 
 module.exports = {
-  service1: {
-    api: '/products/:id',
-    url: 'http://13.56.223.106:3001/',
-    // url: 'http://localhost:3001/',
-    bundle: 'bundle.js',
-  },
-  service2: {
-    api: '/getData/:id',
-    url: 'http://3.128.24.117:3001/',
-    bundle: 'bundle.js',
-  },
+  // service1: {
+  //   api: '/products/:id',
+  //   // url: 'http://13.56.223.106:3001/',
+  //   url: 'http://54.67.30.208:3001/',
+  //   bundle: 'bundle.js',
+  // },
+  // service2: {
+  //   api: '/q-and-a/:id',
+  //   url: 'http://100.25.221.255:3002/',
+  //   bundle: 'bundle.js',
+  // },
   service3: {
     api: '/reviews/:id',
-    url: 'http://52.206.128.170:3003/',
+    // url: 'http://54.219.170.165:3003/',
+    url: 'http://54.219.46.93/',
     bundle: 'bundle.js'
   }
 };
