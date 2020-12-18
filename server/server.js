@@ -10,6 +10,9 @@ app.use(morgan('dev'));
 app.use(express.static(PUBLIC_DIR));
 
 // Handling asset requests for webpack bundles by passing off requests to the bundles router
+app.get('/loaderio-500bf9c741b6ba650ae2490c4af977b8.txt', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'loaderio-500bf9c741b6ba650ae2490c4af977b8.txt'));
+});
 app.use('/bundles', router.bundles);
 // Handling AJAX requests to the API by passing off requests to the api router
 app.use('/api', router.api);
@@ -17,5 +20,7 @@ app.use('/api', router.api);
 app.use('/:id', (req, res) => {
   res.sendFile(path.join(PUBLIC_DIR, './index.html'));
 });
+
+
 
 module.exports = app;
